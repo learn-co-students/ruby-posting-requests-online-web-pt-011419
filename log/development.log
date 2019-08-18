@@ -1535,3 +1535,54 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 14:53:55 -0500
+Started GET "/" for ::1 at 2019-08-18 11:42:13 -0400
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from block (3 levels) in <class:Railtie> at /Users/maxbrooks/.rvm/gems/ruby-2.6.0/gems/activerecord-5.0.7.2/lib/active_record/railtie.rb:113)
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=ZGBDJB1LZN0H1Y4LYG415PFZA2GMARSOJ5VKVD2JGVTHF0CR&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 13ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=ENFPLQYKNINFQE001J13XON2DZ1JXSLWZL0NQSEDQVIZJZWO" for ::1 at 2019-08-18 11:42:20 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"ENFPLQYKNINFQE001J13XON2DZ1JXSLWZL0NQSEDQVIZJZWO"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 220ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-18 11:42:20 -0400
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 363ms (Views: 362.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-18 11:48:06 -0400
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 30ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-18 11:48:08 -0400
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-08-18 11:48:09 -0400
+Processing by SearchesController#search as HTML
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/search" for ::1 at 2019-08-18 11:48:16 -0400
+Processing by SearchesController#foursquare as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3CruxcUnVYPdzoYH7MqHBYvWmK8S4fQpHEMgcksLqjCsoMQM40fgm/F7jg4JPvdTkQizTC1XxaJQGrBeS3Hg0g==", "zipcode"=>"11211", "commit"=>"Search!"}
+  Rendering searches/search.html.erb within layouts/application
+  Rendered searches/search.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 332ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
